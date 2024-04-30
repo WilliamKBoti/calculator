@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+List <String> list = <String> [
+  'km'
+];
+
 class AreaPage extends StatefulWidget {
   const AreaPage({super.key});
 
@@ -28,6 +32,28 @@ class _AreaPageState extends State<AreaPage> {
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
+      body: Column(
+        children: [
+          Row(
+
+          )
+        ],
+      ),
     );
+  }
+}
+
+class dropButton extends StatefulWidget {
+  const dropButton({super.key});
+
+  @override
+  State<dropButton> createState() => _dropButtonState();
+}
+
+class _dropButtonState extends State<dropButton> {
+  String dropdownValue = list.first;
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }

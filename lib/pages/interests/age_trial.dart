@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 class AgePage extends StatelessWidget {
   const AgePage({super.key});
@@ -111,6 +112,7 @@ class _DateSelectorState extends State<DateSelector> {
                   showDayOfWeek: false,
                   onDateTimeChanged: (DateTime newDate) {
                     setState(() => birthDate = newDate);
+                  
                   },
                 ),
               ),
@@ -144,6 +146,7 @@ class _DateSelectorState extends State<DateSelector> {
                   showDayOfWeek: false,
                   onDateTimeChanged: (DateTime newDate) {
                     setState(() => presentDate = newDate);
+                    
                   },
                 ),
               ),

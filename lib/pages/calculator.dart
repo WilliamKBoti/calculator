@@ -125,14 +125,13 @@ class _CalculatorViewState extends State<CalculatorView> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                calcButton('AC', Colors.white10, () => buttonPressed('AC')),
+                calcButton('AC', Colors.white, () => buttonPressed('AC')),
                 calcButton('%', Colors.white10, () => buttonPressed('%')),
                 calcButton('÷', Colors.white10, () => buttonPressed('÷')),
                 calcButton("×", Colors.white10, () => buttonPressed('×')),
               ],
             ),
-            const SizedBox(height: 10),
-
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -142,7 +141,7 @@ class _CalculatorViewState extends State<CalculatorView> {
                 calcButton('-', Colors.white10, () => buttonPressed('-')),
               ],
             ),
-            const SizedBox(height: 10),
+            
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -153,7 +152,6 @@ class _CalculatorViewState extends State<CalculatorView> {
                 calcButton('+', Colors.white10, () => buttonPressed('+')),
               ],
             ),
-            const SizedBox(height: 10),
             // calculator number buttons
 
             Row(
@@ -176,7 +174,7 @@ class _CalculatorViewState extends State<CalculatorView> {
                             '3', Colors.white24, () => buttonPressed('3')),
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
